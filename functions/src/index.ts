@@ -13,7 +13,6 @@ export const onWriteUsers = functions.firestore
       const user = change.after.exists ? change.after.data() : null;
 
       // Get an object with the previous document value (for update or delete)
-      // Just testing the repository
       const oldUser = change.before.data();
 
       console.log("message = ", user)
