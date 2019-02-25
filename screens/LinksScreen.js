@@ -29,6 +29,7 @@ export default class LinksScreen extends React.Component {
 
   componentDidMount = () =>{
     // Get all the users
+    // Hello
     db.collection("users").onSnapshot(querySnapshot =>{
       this.users = []
       querySnapshot.forEach(doc => {
